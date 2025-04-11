@@ -3,8 +3,8 @@ import argparse
 def ParseArgs():
 
 	parser = argparse.ArgumentParser(description='Model Params')
-	parser.add_argument('--temperature', type=float, default=0.1, help='temperature for contrastive loss')
-	parser.add_argument('--ssl_reg', default=1e-1, type=float, help='weight for contrative learning')
+	parser.add_argument('--temperature', type=float, default=0.9, help='temperature for contrastive loss')
+	parser.add_argument('--ssl_reg', default=1e-2, type=float, help='weight for contrative learning')
 	parser.add_argument('--lr', default=1e-3, type=float, help='learning rate')
 	parser.add_argument('--difflr', default=1e-3, type=float, help='learning rate')
 	parser.add_argument('--batch', default=2048, type=int, help='batch size')
@@ -35,7 +35,7 @@ def ParseArgs():
 	parser.add_argument('--dims', type=str, default='[64]')
 	parser.add_argument('--d_emb_size', type=int, default=8)
 	parser.add_argument('--norm', type=bool, default=True)
-	parser.add_argument('--steps', type=int, default=200)
+	parser.add_argument('--steps', type=int, default=150)
 	parser.add_argument('--noise_scale', type=float, default=1e-4)
 	parser.add_argument('--noise_min', type=float, default=0.0001)
 	parser.add_argument('--noise_max', type=float, default=0.001)
