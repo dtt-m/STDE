@@ -1,4 +1,4 @@
-#  STDE: Semantic Transitions Diffusion-Enhanced Multi-behavior Recommendation
+# STDE: Semantic Transitions Diffusion-Enhanced Multi-behavior Recommendation
 >Framework
 ![model](STDE.png)
 ## Abstract
